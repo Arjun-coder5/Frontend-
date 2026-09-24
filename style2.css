@@ -1,0 +1,16 @@
+div{
+    background-color:yellowgreen;
+    height:100px;
+    width:100px;
+    padding: 20px;
+    padding:top right bottom left ;
+    /*padding:20px 50px 20px 50px;*/
+    padding: 50px 20px ;
+    margin:10px;
+    color: antiquewhite ;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
+    font-size:x-large;
+    border:5px solid brown
+}

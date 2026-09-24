@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        /* hover is triggered during cursor interaction */
+        div:hover{
+            background-color: blue;
+        }
+        /* active is triggered during mouse click  */
+        div:active{
+            background-color: black;
+        }
+        input:focus{
+            background-color: blueviolet;
+        }
+        input:active{
+            background-color: bisque
+        }
+    </style>
+</head>
+<body>
+    <!-- it targets element state during interaction. It is represnted by : -->
+     <div></div>
+     <br>
+     <input type="text">
+     
+</body>
+</html>

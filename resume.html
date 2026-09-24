@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Your Name</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+        }
+
+        .resume {
+            width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 35px 45px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 12px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 6px;
+        }
+
+        .header p {
+            font-size: 13px;
+        }
+
+        .header a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 18px;
+        }
+
+        .section h2 {
+            font-size: 15px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #444;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+        }
+
+        .section p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* Education */
+        .education {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .education strong {
+            font-size: 13px;
+        }
+
+        /* Skills */
+        .skills p {
+            margin-bottom: 4px;
+        }
+
+        .skills strong {
+            display: inline-block;
+            width: 120px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .project-tech {
+            font-size: 11px;
+            color: #555;
+        }
+
+        .project ul {
+            margin-left: 18px;
+            margin-top: 3px;
+        }
+
+        .project li {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 2px;
+        }
+
+        /* Experience */
+        .experience {
+            margin-bottom: 10px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        .experience ul {
+            margin-left: 18px;
+            margin-top: 3px;
+        }
+
+        .experience li {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Certifications */
+        .certifications li,
+        .achievements li {
+            font-size: 12px;
+            margin-left: 18px;
+            margin-bottom: 4px;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                margin: 0;
+                padding: 25px 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>ANSHIKA SINGH</h1>
+
+        <p>
+            City, State, India |
+            +91-XXXXXXXXXX |
+            your@email.com |
+            LinkedIn |
+            GitHub |
+            LeetCode
+        </p>
+    </div>
+
+
+    <!-- SUMMARY -->
+    <div class="section">
+        <h2>Summary</h2>
+
+        <p>
+            B.Tech Computer Science student interested in software development,
+            data science and problem solving. Skilled in Java, Python, web
+            development and database technologies with hands-on experience
+            through projects and internships.
+        </p>
+    </div>
+
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <h2>Education</h2>
+
+        <div class="education">
+            <div>
+                <strong>Bachelor of Technology (B.Tech)</strong><br>
+                Computer Science & Engineering<br>
+                GLA University, Mathura
+            </div>
+
+            <div>
+                2024 – 2028<br>
+                CGPA: 8.00 / 10
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section skills">
+        <h2>Technical Skills</h2>
+
+        <p>
+            <strong>Languages:</strong>
+            Java, Python, C, SQL
+        </p>
+
+        <p>
+            <strong>Web:</strong>
+            HTML, CSS, JavaScript
+        </p>
+
+        <p>
+            <strong>Data/ML:</strong>
+            Python, Pandas, NumPy, Scikit-Learn
+        </p>
+
+        <p>
+            <strong>Database:</strong>
+            MySQL, Oracle
+        </p>
+
+        <p>
+            <strong>Tools:</strong>
+            Git, GitHub, VS Code, Jupyter Notebook
+        </p>
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <div class="project-title">
+                Brain Stroke Detection Using Machine Learning
+            </div>
+
+            <div class="project-tech">
+                Python | Pandas | NumPy | Scikit-Learn | FastAPI
+            </div>
+
+            <ul>
+                <li>
+                    Developed a machine learning model to predict the risk of
+                    stroke using patient health and demographic data.
+                </li>
+
+                <li>
+                    Applied data preprocessing and SMOTETomek to handle
+                    class imbalance.
+                </li>
+
+                <li>
+                    Compared multiple ML algorithms and deployed the model
+                    using FastAPI.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="project">
+            <div class="project-title">
+                AI-Based PDF Question Answering System
+            </div>
+
+            <div class="project-tech">
+                Python | FastAPI | Sentence Transformers | FAISS
+            </div>
+
+            <ul>
+                <li>
+                    Built a system that allows users to ask questions from
+                    uploaded PDF documents.
+                </li>
+
+                <li>
+                    Implemented document processing, embeddings and
+                    similarity-based search.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <h2>Experience / Internships</h2>
+
+        <div class="experience">
+
+            <div class="experience-header">
+                <strong>Machine Learning Intern</strong>
+                <span>Jun 2026 – Aug 2026</span>
+            </div>
+
+            <p>Company Name</p>
+
+            <ul>
+                <li>
+                    Worked on machine learning projects and data preprocessing.
+                </li>
+
+                <li>
+                    Implemented Python-based solutions and analyzed datasets.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="experience">
+
+            <div class="experience-header">
+                <strong>Web Development Intern</strong>
+                <span>May 2026 – Jul 2026</span>
+            </div>
+
+            <p>Company Name</p>
+
+            <ul>
+                <li>
+                    Developed responsive web pages using HTML, CSS and
+                    JavaScript.
+                </li>
+
+                <li>
+                    Worked with Git and GitHub for version control.
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!-- CERTIFICATIONS -->
+    <div class="section certifications">
+        <h2>Certifications</h2>
+
+        <ul>
+            <li>Java Programming Certification – HackerRank</li>
+            <li>Python / Data Science Certification</li>
+            <li>Web Development Certification</li>
+        </ul>
+    </div>
+
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section achievements">
+        <h2>Achievements</h2>
+
+        <ul>
+            <li>Solved 200+ problems on LeetCode.</li>
+            <li>Participated in multiple hackathons and coding competitions.</li>
+            <li>Completed multiple technical internships and projects.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

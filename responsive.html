@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: seagreen;
+            height: 100px;
+            width: 100px;
+        }
+        /* width has to be atleast 600px */
+        @media(min-width:600px){
+            .box{
+                background-color: fuchsia;
+            }
+        }
+        /* max width is when the screen size is upto 900px it will showcase this propertyq */
+        @media(max-width:900px){
+            .box{
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class=box></div>
+</body>
+</html>

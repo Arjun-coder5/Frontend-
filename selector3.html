@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ~ is used to target all the siblings  */
+        div ~p{
+            color:blueviolet
+        }
+        /* + is used to target immediate sibling/very next sibling */
+        div +p{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>div sibling </div>
+    <p> s1</p>
+    <p>s2</p>
+    <p>s3</p>
+    <p>s4</p>
+</body>
+</html>

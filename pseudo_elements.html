@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::after{
+            content:"india"
+        }
+        p::before{
+            content:"vrindavan,"
+        }
+        /* span{
+            text-transform:capitalize;
+        } */
+         /* first letter/first line  are applicable for block elements */
+         section::first-letter{
+            font-weight: bolder;
+            color:blue
+         }
+         article::first-line{
+            font-family: monospace;
+            color: blueviolet;
+            
+            
+         }
+    </style>
+</head>
+<body>
+    <!-- pseudo elements used to add/insert/modify specific parts of an elememt. It is represnted by ::  -->
+     <div> i m from </div>
+     <p> mathura</p>
+     <section> i love coding</section>
+     <article>
+        i love travelling
+     </article>
+</body>
+</html> 

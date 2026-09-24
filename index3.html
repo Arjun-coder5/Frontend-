@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        /*psuedo classes*/
+        div:hover{
+            background-color: green;
+            color:blueviolet;
+            font-size:90px;
+            
+        }
+        div::first-letter{
+            text-transform: capitalize;
+        }
+        div::before {
+            content:"First ";
+        }
+        div::after {
+            content:" second";
+        }
+    </style>
+</head>
+<body>
+    <div>text</div>
+    
+
+</body>
+</html>

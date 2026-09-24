@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+        }
+        .linear-gradient{
+            /* background: linear-gradient(direction,color1,color2); */
+            background: linear-gradient(red,blue);
+            background: linear-gradient(to right,red,blue);
+            background: linear-gradient(to bottom,red,blue);
+        }
+        .radial-gradient{
+            background: radial-gradient(circle,yellow,red);
+        }
+        .conic-gradient{
+            background: conic-gradient(red,green,blue,yellow,red);
+        }
+    </style>
+</head>
+<body>
+    <!-- Gradient- It is a transition btw colors -->
+     <div class="box linear-gradient"></div>
+     <br>
+     <div class="box radial-gradient"></div>
+     <br>
+     <div class="box conic-gradient"></div>
+</body>
+</html>

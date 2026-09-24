@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* descendant can be at any nesting level */
+        .grandparent> p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+     <!-- grandparent -->
+<div class="grandparent">
+    <p>child</p>
+    <!-- parent -->
+    <div>
+        
+        <p>
+            grandchild
+        </p>
+    </div></div>                                                                
+</body>
+</html>

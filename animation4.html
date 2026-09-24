@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- TIMING FUNCTION -->
+    <!-- ease- starts slow > faster > slow  -->
+    <!-- linear - constant speed -->
+    <!-- ease in - starts slowly -->
+    <!-- ease out - ends slowly  -->
+    <!-- ease in-out - slow at both start and end  -->
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: magenta;
+            margin: 10px;
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        .ease {
+            transition-timing-function: ease;
+        }
+
+        .ease in {
+            transition-timing-function: ease in;
+        }
+
+        .ease out {
+            transition-timing-function: ease out;
+        }
+
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+
+        body:hover .box {
+            /* translate-helps you move the element */
+            /* transform:translate(x,y); */
+            /* transform:translate(200px)*/
+            /* transform :translate(200px,300px) */
+            transform: translateX(200px) translateY(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box linear">Linear</div>
+    <div class="box ease">ease</div>
+    <div class=" box ease in">ease in </div>
+    <div class="box ease-out">ease out </div>
+    <div class="box ease-in-out">ease in out</div>
+</body>
+
+</html>

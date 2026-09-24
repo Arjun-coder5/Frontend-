@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form</title>
+</head>
+
+<body>
+
+    <h1>Signup Form</h1>
+
+        <form action="POST">
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Phone No:</label>
+        <input type="tel" name="phone">
+        <br><br>
+
+        <label>Father Name:</label>
+        <input type="text" name="father">
+        <br><br>
+
+        <label>Mother Name:</label>
+        <input type="text" name="mother">
+        <br><br>
+
+        <label>Roll No:</label>
+        <input type="text" name="rollno" required>
+        <br><br>
+        
+        <label>Address:</label>
+        <br>
+        <textarea name="address" rows="5" cols="30"></textarea>
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <label>Blood Group:</label>
+        <select name="bloodgroup">
+            <option>Select</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <input type="radio" name="gender" value="other">
+        Other
+
+        <br><br>
+
+        <button type ="submit" value="Sign Up">SUBMIT</button>
+
+        <button type="reset" value="Reset">RESET</button>
+
+    </form>
+
+</body>
+</html>

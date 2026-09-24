@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendant can be at any nesting level */
+        div p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- combinators- combination of multiple selectors -->
+     <!-- grandparent -->
+<div>
+    <!-- parent -->
+    <div>
+        <!-- child -->
+        <p>
+            child
+        </p>
+        <div><p>grandchild</p></div>
+    </div>
+</div>
+</body>
+</html>

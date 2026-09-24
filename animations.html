@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:100px;
+            width:100px;
+            background-color:violet;
+            animation-name: tilt;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite; 
+            /* animation -name duration delay iteration  */
+/* duration - the total time taken to complete the whole animation cycle  */
+/* delay - the time taken for the animation to wait for it to start  */
+            animation: tilt 3s 0.5s infinite;
+
+        }
+        /* @keyframes tilt{
+            from{
+
+            }
+            to{
+                transform: skew(-40deg);
+            }
+        } */
+          @keyframes tilt{
+            0%{
+
+            }
+            50%{
+                transform: skew(40deg);
+            }
+            100%{
+                transform: skew(-40deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
